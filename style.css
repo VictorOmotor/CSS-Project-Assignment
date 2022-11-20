@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+:root {
+    --font-family: "Roboto", sans-serif;
+    --normal-font: 400;
+    --bold-font: 700;
+    --bolder-font: 1000;
+    --bg-color: #fcfcfc;
+    --primary-color: #cc0f0f;
+    --secondary-color: #28a30f;
+    --primary-shadow: #a88b7a;
+    --secondary-shadow: #a2ca34;
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1rem;
+    --transition: 0.4s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color)
+}
+
+a:hover {
+    color: var(--primary-color)
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+p {
+    color: var(--primary-color);
+}
+
+nav{ 
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 5px var(--secondary-shadow);
+}
+
+nav h1 {
+    color: var(--secondary-color);
+    font-weight: var(--bolder-font);
+}
+
+nav a {
+    color: var(--secondary-color);
+    transition: var(--transition);
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+nav ul {
+    display: flex;
+    gap: 1.8rem;
+}
+
+nav ul li {
+    font-weight: var(--bold-font);
+}
+
+.middle-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+    margin: 10rem;
+}
+
+.middle-section img {
+    height: 20rem;
+    width: 20rem;
+}
+
+.intro {
+    margin-left: 2rem;
+    box-shadow: 0 3px 5px var(--secondary-shadow);
+}
+
+.intro .intro-title {
+    color: var(--secondary-color);
+    font-weight: var(--bold-font);
+    text-align: center;
+}
+
+.intro .intro-text {
+    justify-content: center;
+    margin: 2rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+    margin-left: 10rem;
+}
+
+.career {
+    border: 5px ridge var(--secondary-shadow);
+    width: 40rem;
+    height: 20rem;
+}
+
+.career .intro-title {
+    margin: 2rem;
+    padding: 0 12rem;
+    color: var(--secondary-color);
+    font-weight: var(--bold-font);
+}
+
+.career .intro-text {
+    padding: 0 2rem;
+}
+
+.career .skills {
+    margin: 0;
+}
