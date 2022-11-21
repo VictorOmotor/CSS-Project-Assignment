@@ -26,6 +26,15 @@ html {
     box-sizing: border-box;
 }
 
+body {
+    background-color: var(--primary-shadow);
+}
+
+.container {
+   margin: 2rem 2rem 0rem;
+   background-color: var(--bg-color);
+}
+
 ul{
     list-style-type: none;
 }
@@ -90,7 +99,7 @@ nav ul li {
     justify-content: center;
     gap: 2.5rem;
     max-width: 68.75rem;
-    margin: 10rem;
+    margin: 2rem 10rem 5rem;
 }
 
 .middle-section img {
@@ -116,8 +125,7 @@ nav ul li {
 
 .footer {
     display: flex;
-    justify-content: space-between;
-    gap: 2px;
+    gap: 5rem;
     margin-left: 10rem;
 }
 
@@ -128,8 +136,8 @@ nav ul li {
 }
 
 .career .intro-title {
-    margin: 2rem;
-    padding: 0 12rem;
+    margin: 1rem;
+    padding: 0 8rem;
     color: var(--secondary-color);
     font-weight: var(--bold-font);
 }
@@ -138,6 +146,29 @@ nav ul li {
     padding: 0 2rem;
 }
 
-.career .skills {
-    margin: 0;
+.skills {
+    box-shadow: 0 3px 5px var(--secondary-shadow);
+    width: 20rem;
+    height: 20rem;
+}
+.skills .intro-title {
+    color: var(--secondary-color);
+    font-weight: var(--bold-font);
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.skills .skill-set {
+    padding: 2rem 2rem 0rem;
+}
+
+.skills .skill-set .skill {
+    color: var(--primary-color);
+    font-weight: var(--bold-font);
+    margin-bottom: 4px;
+    border: 2px solid var(--primary-shadow);
+    max-width: fit-content;
+    border-radius: 20px;
+    background-color: var(--secondary-shadow);
+
 }
