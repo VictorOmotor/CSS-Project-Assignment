@@ -6,7 +6,7 @@
     --bold-font: 700;
     --bolder-font: 1000;
     --bg-color: #fcfcfc;
-    --primary-color: #cc0f0f;
+    --primary-color: #cc6a0f;
     --secondary-color: #28a30f;
     --primary-shadow: #a88b7a;
     --secondary-shadow: #a2ca34;
@@ -93,13 +93,18 @@ nav ul li {
     font-weight: var(--bold-font);
 }
 
+hr {
+    color: var(--secondary-shadow);
+    border: 1px solid;
+}
+
 .middle-section {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2.5rem;
     max-width: 68.75rem;
-    margin: 2rem 10rem 5rem;
+    margin: 2rem 10rem 2rem;
 }
 
 .middle-section img {
@@ -121,12 +126,13 @@ nav ul li {
 .intro .intro-text {
     justify-content: center;
     margin: 2rem;
+    font-weight: var(--bold-font);
 }
 
 .footer {
     display: flex;
     gap: 5rem;
-    margin-left: 10rem;
+    margin: 2rem 5rem;
 }
 
 .career {
@@ -144,6 +150,7 @@ nav ul li {
 
 .career .intro-text {
     padding: 0 2rem;
+    font-weight: var(--bold-font);
 }
 
 .skills {
